@@ -1,0 +1,669 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "`docker compose up -d postgres` starts without errors": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224629548
+      },
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224648710
+      },
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784225028762
+      }
+    ],
+    "psql connection succeeds with configured credentials": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224629596
+      },
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784225031989
+      },
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784225035016
+      }
+    ],
+    "`SELECT * FROM pg_extension WHERE extname = 'vector'` returns a row": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224629635
+      },
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784225035961
+      },
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784225039825
+      }
+    ],
+    "`\\dt` shows `document_chunks` and `ingestion_sources` tables": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224629671
+      },
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784225050939
+      },
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784225054628
+      }
+    ],
+    "Vector column accepts 768-dimension inserts": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224629714
+      },
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784225058198
+      },
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784225064307
+      }
+    ],
+    "Embedding model container starts and responds to `/v1/embeddings` endpoint": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224629760
+      },
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784225068708
+      }
+    ],
+    "`embed_text(\"hello world\")` returns a list of exactly 768 floats": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224629792
+      }
+    ],
+    "`embed_batch([\"a\", \"b\", \"c\"])` returns 3 vectors of 768 dimensions each": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224629824
+      }
+    ],
+    "Stored vector retrieves via cosine similarity search": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224629855
+      }
+    ],
+    "Search for \"donor search\" returns higher similarity to \"finding a donor\" than to \"weather forecast\"": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224629893
+      }
+    ],
+    "`GET /tools` returns JSON with 2 tools and valid schemas": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224629927
+      }
+    ],
+    "`POST /tools/search_documents` with seeded data returns ranked results": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224629960
+      }
+    ],
+    "Results include `content`, `score`, `metadata.source_type`, `metadata.title`, `metadata.source_url`": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224629995
+      }
+    ],
+    "Empty query returns empty results (not an error)": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224630029
+      }
+    ],
+    "`source_filter` correctly limits results to specified source type": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224630063
+      }
+    ],
+    "Server handles PostgreSQL connection errors gracefully (503 response)": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224630105
+      }
+    ],
+    "Fixed-size chunking: 1000-char doc with chunk_size=300, overlap=50 produces expected chunk count": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224630186
+      }
+    ],
+    "Paragraph chunking: text with `\\n\\n` delimiters splits at paragraph boundaries": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224630222
+      }
+    ],
+    "Heading chunking: markdown with `#` headers splits at heading boundaries": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224630270
+      }
+    ],
+    "Overlap: adjacent chunks share expected number of characters": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224630304
+      }
+    ],
+    "CLI `cortex ingest --source file --path ./test.md` ingests and stores chunks": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224630344
+      }
+    ],
+    "API `POST /ingest` with same input produces identical chunk count and content": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224630381
+      }
+    ],
+    "Metadata (source_type, chunk_index, total_chunks, ingested_at) is stored correctly": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224630415
+      }
+    ],
+    "Example JSON files load without errors": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224630464
+      }
+    ],
+    "HTML `<h1>Title</h1><p>Content</p>` converts to clean text preserving structure": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224630704
+      }
+    ],
+    "Confluence tables render as readable text": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224630754
+      }
+    ],
+    "Metadata extracted correctly: title, space, URL, labels": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224630782
+      }
+    ],
+    "End-to-end: `cortex ingest --source confluence --mode example` stores chunks in pgvector": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224630826
+      }
+    ],
+    "Vector search for terms in example pages returns relevant results with Confluence URLs": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224630853
+      }
+    ],
+    "File discovery walks directory and respects include/exclude patterns": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224630896
+      }
+    ],
+    "Binary files (images, compiled) are skipped": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224630937
+      }
+    ],
+    "`.git/` and `__pycache__/` are excluded": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224630973
+      }
+    ],
+    "Python files chunk at function/class boundaries": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631009
+      }
+    ],
+    "Markdown files chunk at headings": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631044
+      }
+    ],
+    "Metadata includes file_path, language, repo_name": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631072
+      }
+    ],
+    "CLI: `cortex ingest --source git --path ./example-data/repos/sample-project`": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631105
+      }
+    ],
+    "Search \"authentication\" returns relevant code from `auth.py`": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631146
+      }
+    ],
+    "SRT file parses correctly (index, time range, text for each subtitle)": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631181
+      }
+    ],
+    "VTT file parses correctly (handles WEBVTT header, cue timing)": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631213
+      }
+    ],
+    "Time-window merging combines 5-second subtitles into 30-60 second chunks": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631247
+      }
+    ],
+    "Merged chunks maintain accurate start/end timestamps": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631280
+      }
+    ],
+    "Metadata preserves video title and timestamp range": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631314
+      }
+    ],
+    "CLI: `cortex ingest --source transcript --path ./example-data/transcripts/`": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631346
+      }
+    ],
+    "Search \"create a new donor\" returns transcript chunk with timestamp citation": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631378
+      }
+    ],
+    "`GET /tools` returns 3 tools with valid schemas": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631413
+      }
+    ],
+    "`search_code` with query \"def authenticate\" finds match in auth.py": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631450
+      }
+    ],
+    "`search_code` with file_pattern \"*.py\" excludes .md files": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631484
+      }
+    ],
+    "`read_file` returns content with accurate line numbers": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631517
+      }
+    ],
+    "`read_file` with path traversal attempt (`../../etc/passwd`) returns 403": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631591
+      }
+    ],
+    "`list_files` returns directory contents with metadata": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631625
+      }
+    ],
+    "Missing file returns 404 (not 500)": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631654
+      }
+    ],
+    "`GET /tools` returns 2 tools with valid schemas": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631682
+      }
+    ],
+    "`search_transcripts` returns results with timestamp metadata": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631715
+      }
+    ],
+    "Results are filtered to transcript source type only": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631748
+      }
+    ],
+    "`get_transcript_segment` returns correct chunks for time range": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631779
+      }
+    ],
+    "Expanded context includes adjacent segments": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631807
+      }
+    ],
+    "Empty search returns empty results gracefully": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631847
+      }
+    ],
+    "`GET /health` reports all services status": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631964
+      }
+    ],
+    "Tool discovery aggregates tools from all 3 MCP servers": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224631996
+      }
+    ],
+    "Simple query triggers at least one tool call and returns synthesized answer": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632030
+      }
+    ],
+    "Response includes citations with source metadata": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632090
+      }
+    ],
+    "Multi-tool query (needs vector + git) calls both servers": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632135
+      }
+    ],
+    "Orchestration loop terminates after max iterations": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632327
+      }
+    ],
+    "LLM timeout returns appropriate error (not hang)": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632362
+      }
+    ],
+    "Session ID maintains conversation context across requests": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632400
+      }
+    ],
+    "Unavailable MCP server is excluded from tool list (graceful degradation)": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632507
+      }
+    ],
+    "`cortex query \"test\"` connects to gateway and prints a response": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632539
+      }
+    ],
+    "`/quit` exits the REPL cleanly": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632581
+      }
+    ],
+    "`/clear` resets session (new session_id)": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632618
+      }
+    ],
+    "`/sources` displays available source types": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632657
+      }
+    ],
+    "Citations render in a bordered panel with source type indicators": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632689
+      }
+    ],
+    "Network error (gateway down) displays friendly error message": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632723
+      }
+    ],
+    "Streaming responses update display progressively": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632754
+      }
+    ],
+    "Streamlit app starts without errors": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632791
+      }
+    ],
+    "Chat input submits to gateway API": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632827
+      }
+    ],
+    "Response displays in chat format": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632864
+      }
+    ],
+    "Citations section shows source metadata": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632902
+      }
+    ],
+    "Source filter checkboxes pass filter to API": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632938
+      }
+    ],
+    "Conversation history persists within session": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224632972
+      }
+    ],
+    "UI handles gateway errors gracefully (displays error message)": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224633005
+      }
+    ],
+    "Fresh clone → `make setup` → all services running in under 5 minutes (excluding model download)": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224633038
+      }
+    ],
+    "`make test` passes all unit tests across all services": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224633072
+      }
+    ],
+    "Integration: ingest all example data sources without errors": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224633106
+      }
+    ],
+    "Integration: query \"authentication\" returns results from both code and docs": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224633144
+      }
+    ],
+    "Integration: query about a topic in transcripts returns timestamped citation": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224633180
+      }
+    ],
+    "`GET /health` on gateway reports all services green": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224633218
+      }
+    ],
+    "GitHub Actions CI passes on a clean run": [
+      {
+        "executionId": "895cae65-7e65-42c5-9c47-4ae2092cb13a",
+        "chatSessionId": "sess_4a6c7f67-c7b3-43f0-a09c-daa9247593dd",
+        "timestamp": 1784224633255
+      }
+    ]
+  }
+}
